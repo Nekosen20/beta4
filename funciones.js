@@ -54,7 +54,6 @@ function publicarAnimal(event) {
     const contacto = datos.get('contacto');
     const imagen = datos.get('imagen');
     
-    // N U E V O S   C A M P O S
     const esterilizado = datos.get('esterilizado'); 
     const vacunas = datos.get('vacunas'); 
 
