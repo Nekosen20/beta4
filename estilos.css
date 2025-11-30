@@ -1,0 +1,738 @@
+/* =========================================================
+   ESTILOS BASE Y PALETA DE COLORES
+   ========================================================= */
+
+/* Paleta de colores principal:
+   Verde Olivo: #6B8E23 (Header, Footer, Títulos H2)
+   Marrón Oscuro: #A0522D (Nav, Botones de Adopción)
+   Naranja Bronce: #CD7F32 (Hover, Acentos)
+   Beige/Fondo: #F8F8F8 (Body)
+*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F8F8F8; 
+    color: #333; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #6B8E23; 
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* =========================================================
+   HEADER Y NAVEGACIÓN
+   ========================================================= */
+
+header {
+    background-color: #6B8E23; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar contenido */
+    gap: 15px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+nav {
+    background-color: #A0522D; 
+    overflow: hidden;
+    display: flex; /* Asegurar que los enlaces se alineen bien */
+    justify-content: center;
+}
+
+nav a {
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: #CD7F32; 
+}
+
+
+/* =========================================================
+   SECCIÓN DE INICIO (OBJETIVO, MISIÓN, VISIÓN) - Mejorada
+   ========================================================= */
+
+#Inicio {
+    padding: 60px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Título principal de la sección Inicio */
+#Inicio h2.text-center {
+    font-size: 2.5rem;
+    color: #6B8E23;
+    border-bottom: 3px solid #A0522D;
+    padding-bottom: 10px;
+}
+
+/* Estilo para las tarjetas OMV */
+#Inicio .card.bg-light {
+    background-color: #FBF5E5 !important; /* Beige muy claro */
+    border: 1px solid #E0D3C3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+#Inicio .card.bg-light:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+#Inicio .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #A0522D;
+}
+
+/* Íconos grandes de OMV */
+#Inicio .card-title .fs-1 {
+    display: block;
+    margin-bottom: 5px;
+    color: #6B8E23;
+}
+
+/* Ajuste de color para el CTA (Call To Action) de Adopción */
+#Inicio .card.bg-success {
+    background-color: #A0522D !important; /* Marrón Oscuro para contraste */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#Inicio .card.bg-success h2 {
+    color: white;
+}
+
+#Inicio .card.bg-success .blockquote p {
+    font-style: italic;
+    color: #F5DEB3;
+}
+
+
+/* =========================================================
+   TARJETAS DE ANIMALES Y SIMETRÍA PERFECTA
+   ========================================================= */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* CLAVE para simetría vertical: estira todas las tarjetas a la misma altura */
+    align-items: stretch; 
+}
+
+
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #A0522D; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card {
+    background: #FFFFFF; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    
+    /* CLAVE 1: Fijamos la altura mínima para la simetría */
+    min-height: 500px; /* Puedes ajustar este valor (ej: 480px, 520px) según el animal con la descripción más larga. */
+    height: 100%; /* Para que se estire si la descripción supera el min-height */
+    
+    /* CLAVE 2: Flexbox vertical para alinear el botón */
+    display: flex; 
+    flex-direction: column;
+    
+    flex: 1 1 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* El botón se pega al ras del final (margin-top: auto) */
+.card button {
+    margin-top: auto; 
+    margin-bottom: 0;
+    width: 100%;
+    /* ... (resto de estilos de botón) ... */
+}
+
+/* Asegúrate de que el párrafo de descripción no añada margen extra */
+.card p {
+    margin-bottom: 0; 
+    margin-top: 10px;
+    flex-grow: 1; 
+    color: #555;
+}
+
+.card button:hover {
+    background-color: #CD7F32; 
+}
+
+
+.card .info-extra {
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.card .info-extra p {
+    margin-bottom: 5px !important;
+    font-size: 0.9rem;
+}
+
+
+
+
+#adopcion {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-top: 2px solid #6B8E23;
+}
+
+#adopcion h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #A0522D;
+    text-align: center;
+}
+
+#adopcion .card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   
+    display: block; 
+    height: auto;
+}
+
+
+#adopcion .form-control,
+#adopcion .form-select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#adopcion textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+#adopcion input[type="submit"] {
+    background-color: #6B8E23; 
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#adopcion input[type="submit"]:hover {
+    background-color: #85B33A;
+}
+
+
+#adopcion .bg-light {
+    background-color: #F8F8F8 !important;
+    border: 1px dashed #A0522D !important;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #FFFFFF; 
+    margin: 8% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 550px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #A0522D; 
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #CD7F32;
+}
+
+/* Estilos específicos para el botón del formulario de adopción */
+.modal input[type="submit"] {
+    background-color: #6B8E23; 
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.modal input[type="submit"]:hover {
+    background-color: #85B33A;
+}
+
+/* Modal de imagen */
+#imgModal {
+    display: none; /* DEBE estar 'none' para que inicie OCULTO */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    /* CLAVE para centrar la imagen - LO COMENTAMOS O BORRAMOS DE AQUÍ */
+    /* display: flex; <--- ¡ESTA LÍNEA CAUSABA QUE SIEMPRE FUERA VISIBLE! */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#imgModal .close {
+    color: white;
+    font-size: 50px;
+    top: 20px;
+    right: 30px;
+}
+
+.modal-img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+
+
+#desarrolladores {
+    margin-top: 40px;
+}
+
+#desarrolladores .card {
+    text-align: center;
+    padding: 20px;
+}
+
+#desarrolladores .card img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #CD7F32; /* Borde destacado */
+    transition: transform 0.3s;
+}
+
+#desarrolladores .card img:hover {
+    transform: scale(1.05);
+}
+
+#desarrolladores .card h4 {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 10px;
+    color: #555;
+    font-weight: normal;
+}
+
+#desarrolladores .card p {
+    font-weight: bold;
+    color: #6B8E23; /* Rol destacado */
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #6B8E23; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+
+section {
+    display: none;
+}
+
+section.activa {
+    display: block;
+}
+/* Estilos para las secciones de Objetivo, Misión, Visión con imágenes */
+.feature-block {
+    padding: 30px;
+    background-color: #fcfcfc; /* Un fondo ligeramente diferente para cada bloque */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 40px !important; /* Más espacio entre los bloques */
+}
+
+.feature-block img {
+    max-height: 300px; /* Altura máxima para todas las imágenes */
+    width: 100%; /* Asegura que la imagen sea responsiva */
+    object-fit: cover; /* Recorta la imagen para que encaje sin distorsionarse */
+    border: 3px solid #6B8E23; /* Borde sutil */
+}
+
+/* Reemplazar los estilos anteriores de .card en #Inicio para estos bloques si es necesario */
+#Inicio .card.bg-light {
+    /* Estos estilos ya no son necesarios si cada bloque ahora es un .feature-block */
+    /* Pero si los mantienes, asegúrate de que no entren en conflicto */
+    /* Por ejemplo, puedes eliminar background-color y border de aquí */
+    background-color: transparent !important; 
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Ajuste para la imagen en el bloque de "¿Por qué adoptar?" */
+#Inicio .card.bg-success img {
+    border: none !important;
+    box-shadow: none !important;
+}
+/* --- Estilos para Casos Exitosos (#caso) --- */
+#caso {
+    padding: 80px 20px; /* Más padding para que respire */
+    background-color: #F8F8F8; /* Fondo beige claro para la sección */
+}
+
+#caso h2 {
+    color: #A0522D; /* Título principal en Marrón Oscuro */
+    font-size: 2.5rem;
+    border-bottom: 3px solid #6B8E23; /* Subrayado en Verde Olivo */
+    padding-bottom: 15px;
+    margin-bottom: 50px !important;
+}
+
+#caso .lead {
+    font-style: italic;
+}
+
+#caso .card {
+    border-radius: 15px; /* Bordes más suaves */
+    overflow: hidden; /* Asegura que la imagen se ajuste bien */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#caso .card:hover {
+    transform: translateY(-8px); /* Efecto elevación al pasar el ratón */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+#caso .case-img {
+    height: 280px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta la imagen sin distorsionar */
+    border-bottom: 5px solid #6B8E23; /* Borde inferior para separar imagen de texto */
+}
+
+#caso .card-body {
+    padding: 25px;
+}
+
+#caso .card-title {
+    font-size: 1.6rem;
+    color: #6B8E23; /* Título del caso en Verde Olivo */
+}
+
+#caso .blockquote {
+    border-left: 4px solid #CD7F32; /* Línea decorativa para la cita */
+    padding-left: 15px;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+#caso .blockquote-footer {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+#caso .btn-success {
+    background-color: #A0522D !important; /* Botón de acción en Marrón Oscuro */
+    border-color: #A0522D !important;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 50px; /* Botón más redondeado */
+    transition: background-color 0.3s ease;
+}
+
+#caso .btn-success:hover {
+    background-color: #CD7F32 !important; /* Efecto hover en Naranja Bronce */
+    border-color: #CD7F32 !important;
+}
+/* --- Estilos para la Sección de Contacto (#contacto) --- */
+#contacto {
+    padding: 80px 20px;
+    background-color: #f0f8ff; /* Un fondo azul muy claro para diferenciarla */
+}
+
+#contacto h2 {
+    color: #4CAF50; /* Verde más vibrante */
+    font-size: 2.8rem;
+    border-bottom: 3px solid #6B8E23;
+    padding-bottom: 15px;
+    margin-bottom: 60px !important;
+}
+
+#contacto .lead {
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#contacto .contact-card {
+    background: #ffffff;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 280px; /* Asegura que las tarjetas tengan una altura mínima */
+}
+
+#contacto .contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.1);
+}
+
+#contacto .contact-icon {
+    font-size: 3.5rem; /* Iconos grandes y visibles */
+    margin-bottom: 15px;
+}
+
+#contacto .facebook-icon {
+    color: #1877F2; /* Color oficial de Facebook */
+}
+
+#contacto .instagram-icon {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#contacto .whatsapp-icon {
+    color: #25D366; /* Color oficial de WhatsApp */
+}
+
+#contacto .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#contacto .card-text a {
+    font-weight: bold;
+}
+
+#contacto .btn-primary {
+    background-color: #1877F2;
+    border-color: #1877F2;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#contacto .btn-primary:hover {
+    background-color: #145cb3;
+    border-color: #145cb3;
+}
+
+#contacto .btn-danger {
+    background-color: #E1306C; /* Color de Instagram */
+    border-color: #E1306C;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#contacto .btn-danger:hover {
+    background-color: #b82a57;
+    border-color: #b82a57;
+}
+
+#contacto .btn-success {
+    background-color: #25D366; /* Color de WhatsApp */
+    border-color: #25D366;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#contacto .btn-success:hover {
+    background-color: #1da84d;
+    border-color: #1da84d;
+}
+/* ======================================================= */
+/* ====== MEJORAS VISUALES PARA LA SECCIÓN DESARROLLADORES ====== */
+/* ======================================================= */
+
+#desarrolladores {
+    padding: 80px 20px;
+    background-color: #f8f9fa; /* Fondo gris muy claro */
+}
+
+#desarrolladores h2 {
+    color: #4CAF50; /* Verde de la marca */
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #6B8E23;
+    margin-bottom: 3rem !important;
+}
+
+#desarrolladores .developer-card {
+    background: #ffffff;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef !important; /* Borde sutil */
+    min-height: 480px; /* Altura mínima para que se vean alineadas */
+}
+
+#desarrolladores .developer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la imagen del desarrollador (circular con borde) */
+#desarrolladores .developer-img-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto; /* Centrar el contenedor */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #4CAF50; /* Borde de color de marca */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#desarrolladores .developer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el círculo sin deformarse */
+}
+
+/* Estilo para el rol/puesto */
+#desarrolladores .role-title {
+    font-size: 1rem;
+    padding: 5px 15px;
+    background-color: #e0f2f7; /* Fondo azul claro para destacar */
+    color: #007bff;
+    border-radius: 5px;
+    display: inline-block; /* Ocupa solo el ancho del texto */
+    font-style: italic;
+}
+
+/* Estilo para la información de contacto */
+#desarrolladores .contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#desarrolladores .contact-info a:hover {
+    color: #38761d;
+}
+/* ======================================================= */
+/* ====== SOLUCIONES DE FUNCIONALIDAD Y ESTILO MEJORADO ====== */
+/* ======================================================= */
+
+/* 1. SOLUCIÓN CLAVE: Evita que capas invisibles cubran los botones. */
+.nav-custom {
+    /* Mantiene la barra fija en la parte superior */
+    position: sticky !important; 
+    top: 0;
+    /* Da la prioridad de capa más alta para que siempre esté al frente */
+    z-index: 1020 !important; 
+    
+    /* Estilos estéticos mejorados */
+    background-color: #A0522D !important; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    border-bottom: 3px solid #6B8E23;
+}
+
+/* 2. Desplazamiento Suave (Scroll Behavior) */
+/* Hace que el salto entre secciones sea suave, si el navegador lo soporta. */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 3. Estilos de Enlaces (Para un mejor feedback visual) */
+.nav-custom .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+.nav-custom .nav-link:hover,
+.nav-custom .nav-link.active {
+    background-color: #C18C5D !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}

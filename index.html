@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PawsOfLove | Adopción Responsable Huánuco</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo-titulo">
+            <img src="logo.png" alt="Logo de PawsOfLove" class="logo">
+            <div>
+                <h1>PawsOfLove🐾</h1>
+                <p>Conoce a nuestros animales disponibles para adopción</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#Inicio" onclick="mostrarSeccion('Inicio')">Inicio</a>
+        <a href="#perros" onclick="mostrarSeccion('perros')">Perros</a>
+        <a href="#gatos" onclick="mostrarSeccion('gatos')">Gatos</a>
+        <a href="#otros" onclick="mostrarSeccion('otros')">Otros</a>
+        <a href="#adopcion" onclick="mostrarSeccion('adopcion')">Dar en adopción</a>  
+        <a href="#caso" onclick="mostrarSeccion('caso')">Casos exitosos</a>
+        <a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a>
+        <a href="#desarrolladores" onclick="mostrarSeccion('desarrolladores')">Desarrolladores</a>
+    </nav>
+    
+    <div class="container">
+        
+        <section id="Inicio" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold text-success">🐾 Acerca de PawsOfLove 🐾</h2>
+
+                <div class="row align-items-center mb-5 feature-block">
+                    <div class="col-md-6 text-center text-md-start order-md-1">
+                        <h3 class="card-title text-success mb-3"><span class="fs-1"><i class="bi bi-bullseye"></i></span> Objetivo: Conectando Vidas</h3>
+                        <p class="lead">Dado que no hay albergues en Pillco Marca y Huánuco, nuestro objetivo principal en PawsOfLove es ser la **plataforma esencial para conectar directamente a animales rescatados** o en situación de calle con adoptantes responsables.</p>
+                        <ul class="list-unstyled text-start small mt-3">
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Simplificamos el proceso de adopción.</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Garantizamos un hogar amoroso y permanente.</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Minimizamos su tiempo en las calles o temporales.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center order-md-2">
+                        <img src="objetivo.png" alt="Personas conectando con animales" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-5 feature-block">
+                    <div class="col-md-6 text-center text-md-start order-md-2">
+                        <h3 class="card-title text-success mb-3"><span class="fs-1"><i class="bi bi-heart-fill"></i></span> Misión: Rescate y Rehabilitación</h3>
+                        <p class="lead">Nuestra misión es **rescatar y rehabilitar** animales abandonados o en situación de riesgo, brindándoles una segunda oportunidad para encontrar un hogar responsable y lleno de amor donde puedan prosperar.</p>
+                        <ul class="list-unstyled text-start small mt-3">
+                            <li><i class="bi bi-arrow-right-circle-fill text-success"></i> Una segunda oportunidad de vida.</li>
+                            <li><i class="bi bi-arrow-right-circle-fill text-success"></i> Un hogar responsable y lleno de amor.</li>
+                            <li><i class="bi bi-arrow-right-circle-fill text-success"></i> El ambiente para prosperar.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center order-md-1">
+                        <img src="mision.png" alt="Animal siendo rescatado o rehabilitado" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-5 feature-block">
+                    <div class="col-md-6 text-center text-md-start order-md-1">
+                        <h3 class="card-title text-success mb-3"><span class="fs-1"><i class="bi bi-star-fill"></i></span> Visión: Un Hogar para Cada Patita</h3>
+                        <p class="lead">Impulsamos la creencia de que cada animal merece una segunda oportunidad. Buscamos facilitar el vínculo transformador entre animales en necesidad y familias dispuestas a amar, a través de un proceso de adopción transparente y consciente.</p>
+                        <ul class="list-unstyled text-start small mt-3">
+                            <li><i class="bi bi-eye-fill text-success"></i> Procesos de adopción transparentes.</li>
+                            <li><i class="bi bi-eye-fill text-success"></i> Educación comunitaria constante.</li>
+                            <li><i class="bi bi-eye-fill text-success"></i> Demostración del impacto positivo de la adopción.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center order-md-2">
+                        <img src="vision.png" alt="Familia feliz con su mascota adoptada" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+
+                <div class="card bg-success text-white shadow-lg p-4 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 text-center text-md-start">
+                            <h2 class="card-title mb-4 fw-bolder"><span class="fs-1"><i class="bi bi-house-door-fill"></i></span> ¡Adopta, Transforma una Vida (y la Tuya)!</h2>
+                            <p class="lead">Adoptar no solo cambia la vida de un animal en condiciones difíciles, sino que **transforma profundamente la tuya**.</p>
+                            <blockquote class="blockquote mb-0 mt-4">
+                                <p class="mb-0 fs-4 fw-bolder">"En lugar de comprar, abre tu corazón a una vida que te necesita."</p>
+                            </blockquote>
+                            <p class="mt-3">Nuestros compañeros esperan ansiosos un hogar responsable y amoroso. ¡Descubre la alegría de adoptar!</p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="final.png" alt="Mano humana y patita de animal unidas" class="img-fluid rounded shadow-lg my-3 my-md-0" style="max-height: 200px;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="perros">
+            <h2>🐶 Perros</h2>
+            <div class="cards">
+                <div class="card"><img src="max.jpeg" alt="Max" onclick="verImagen(this.src)"><h3>Max</h3><p>¡Max te Espera! Max, un perrito mediano de 1 año, es dócil, un poco tímido y muy dormilón. Busca un hogar amplio para correr y encontrar la tranquilidad que necesita.Ya está desparasitado y listo para recibir sus vacunas.</p><button onclick="abrirFormulario('Max')">Adoptar</button></div>
+                <div class="card"><img src="luna.jpeg" alt="Luna" onclick="verImagen(this.src)"><h3>Luna</h3><p>¡Luna: Amor de Cachorra! Luna, 2 meses, es una cachorrita adorable: dormilona y juguetona. ¡Ideal para familias con niños! Aún necesita vacunas y desparasitación. Dale la bienvenida a tu hogar y ve crecer su alegría.</p><button onclick="abrirFormulario('Luna')">Adoptar</button></div>
+                <div class="card"><img src="huracan.jpeg" alt="Huracan" onclick="verImagen(this.src)"><h3>Huracan</h3><p>¡Huracán: Adopta la Alegría!Huracán, 3 años, es juguetón, alegre y muy amistoso. Con toda su salud al día, solo necesita espacio y un hogar para brillar.¿Listo para la diversión? ¡Adóptalo!</p><button onclick="abrirFormulario('Huracan')">Adoptar</button></div>
+                <div class="card"><img src="pelusa.jpeg" alt="pelusa" onclick="verImagen(this.src)"><h3>pelusa</h3><p>¡Pelusa Busca un Hogar! Pelusa es una perrita mediana de 2 años, pura alegría y cariño, con adorables orejitas café. Obediente y juguetona, adora correr en espacios amplios.Está vacunada y desparasitada, lista para darte todo su amor.¿Buscas una compañera leal y llena de vida? ¡Pelusa te espera!.</p><button onclick="abrirFormulario('Pelusa')">Adoptar</button></div>
+                <div class="card"><img src="blanco.jpeg" alt="Mawhi" onclick="verImagen(this.src)"><h3>Mawhi</h3><p>¡Conoce a Mawhi! Un Cariñoso Amigo de 8 Meses Mawhi es un perrito mediano, negro y de mirada tierna. Con solo 8 meses, es juguetón, cariñoso e inteligente.Ya vacunado y desparasitado, Mawhi busca un hogar activo con o sin niños, donde pueda explorar y recibir mucho amor.¿Listo para darle una familia a esta dulzura?</p><button onclick="abrirFormulario('Mawhi')">Adoptar</button></div>
+                <div class="card"><img src="tilin.jpeg" alt="tilin" onclick="verImagen(this.src)"><h3>Tilín</h3><p>¡Tilín: Un Compañero Leal y Valiente!Tilín es un perro adulto de aspecto fuerte y mirada inteligente. Imaginamos en él un espíritu noble y protector, listo para la aventura.Busca un hogar activo donde compartir paseos y juegos. Su lealtad será tu mayor recompensa.¿Quieres un héroe de cuatro patas? ¡Adopta a Tilín!</p><button onclick="abrirFormulario('Tilín')">Adoptar</button></div>
+                <div class="card"><img src="duquesa.jpeg" alt="Duquesa" onclick="verImagen(this.src)"><h3>Duquesa</h3><p>¡Adopta a Duquesa: Amor Travieso!Duquesa es una cachorrita adorable, mansita, ¡y le encanta morder! Casi nunca ladra, pero sus juegos incluyen mordisquitos. Busca un hogar paciente y lleno de amor que disfrute su energía y singularidad.¿Listo para darle un hogar a esta mordedora de corazones?</p><button onclick="abrirFormulario('Duquesa')">Adoptar</button></div>
+                <div class="card"><img src="perro1.jpeg" alt="Chispita" onclick="verImagen(this.src)"><h3>Chispita</h3><p>¡Conoce a Chispita! Esta adorable bolita de pelo negro con manchita blanca es Chispita, y busca su hogar para siempre. Es un cachorrito lleno de curiosidad, juego y mucho amor por dar.Si buscas un compañero leal y tierno para llenar tu vida de alegría, ¡Chispito es perfecto para ti! ¿Le abres la puerta de tu corazón?</p><button onclick="abrirFormulario('Chispita')">Adoptar</button></div>
+            </div>
+        </section>
+        
+        <section id="gatos">
+            <h2>🐱 Gatos</h2>
+            <div class="cards">
+                <div class="card"><img src="gato1.jpeg" alt="Nimbus"onclick="verImagen(this.src)"><h3>Nimbus</h3><p>¡Adopta a Nimbus: Elegancia y Calma! Nimbus, gato blanco de ojos verdes, es pura serenidad y belleza. Tranquilo y cariñoso, busca un hogar para compartir momentos de paz.¿Listo para la calma y el amor de Nimbus?</p><button onclick="abrirFormulario('Mia')">Adoptar</button></div>
+                <div class="card"><img src="gato2.jpeg" alt="Rayo" onclick="verImagen(this.src)"><h3>Rayo</h3><p>¡Adopta a Rayo: Un Espíritu Libre y Cariñoso! Rayo, con su pelaje atigrado y ojos vivaces, irradia independencia y dulzura. Imaginamos en él un alma curiosa y juguetona, lista para explorar su nuevo hogar.</p><button onclick="abrirFormulario('Simba')">Adoptar</button></div>
+                <div class="card"><img src="gato5.jpeg" alt="Jade" onclick="verImagen(this.src)" ><h3>Jade</h3><p>¡Adopta a Jade: Belleza de Ojos Verdes!Jade, un gato de pelaje largo y mirada esmeralda, es tan hermoso como tranquilo. Ideal para un hogar que valore la serenidad y el cariño felino.¿Listo para enamorarte de Jade?</p><button onclick="abrirFormulario('Mia')">Adoptar</button></div>
+                <div class="card"><img src="gato3.jpeg" alt="Polar" onclick="verImagen(this.src)"><h3>Polar</h3><p>¡Adopta a Polar: Elegancia y Amor!Polar, un gato blanco con detalles oscuros, es tan bello como cariñoso. Sereno y afectuoso, busca un hogar para compartir mimos.¡Polar te espera!</p><button onclick="abrirFormulario('Simba')">Adoptar</button></div>
+                <div class="card"><img src="gato4.jpeg" alt="Mia" onclick="verImagen(this.src)"><h3>Mia</h3><p>¡Adopta a Mía: Dulce Mirada Atigrada!Mía es una gata de pelaje atigrado con preciosos ojos verdes. Su expresión dulce y tranquila esconde un corazón lleno de cariño esperando un hogar.¡Mía te espera!</p><button onclick="abrirFormulario('Mia')">Adoptar</button></div>
+                <div class="card"><img src="gato6.jpeg" alt="Canela" onclick="verImagen(this.src)"><h3>Canela</h3><p>¡Adopta a Canela: Amor Acogedor!Canela, gata naranja y blanca, adora las siestas y el cariño. Con su ronroneo suave, llenará tu hogar de paz y amor. ¡La compañera perfecta!</p><button onclick="abrirFormulario('Simba')">Adoptar</button></div>
+            </div>
+        </section>
+        
+        <section id="otros">
+            <h2>🦜 Otros animales</h2>
+            <div class="cards">
+                <div class="card"><img src="hamster.jpeg" alt="Chara"onclick="verImagen(this.src)"><h3>Chara</h3><p>¡Adopta a Chara: Alegría en Miniatura!Chara es un hámster adorable y curioso, listo para llenar tu hogar de pequeñas aventuras y mucho cariño. ¡Un compañero fácil de querer!</p><button onclick="abrirFormulario('Chara')">Adoptar</button></div>
+                <div class="card"><img src="alberto.jpeg" alt="alberto"onclick="verImagen(this.src)"><h3>alberto</h3><p>¡Adopta a Alberto: Loro Parlanchín y muy Cariñoso! Alberto, loro verde con toques azul/amarillo, es inteligente y curioso. Este brillante amigo busca un hogar lleno de amor. ¡Te espera!</p><button onclick="abrirFormulario('Alberto')">Adoptar</button></div>
+                <div class="card"><img src="tortu.jpg" alt="Lenta"onclick="verImagen(this.src)"><h3>Lenta</h3><p>¡Adopta a Lenta: Un Tesoro Tranquilo y Único!Lenta, tortuga con caparazón distintivo, es un espíritu paciente. Perfecta para un hogar sereno, trayendo paz.</p><button onclick="abrirFormulario('Chara')">Adoptar</button></div>
+                <div class="card"><img src="conejo.jpg" alt="Copito"onclick="verImagen(this.src)"><h3>Copito de Miel</h3><p>¡Conoce a Copito de Miel! Este adorable conejito de pelaje suave y largas orejas caídas busca un hogar lleno de cariño. Copito de Miel es tranquilo, curioso y perfecto para quien busca un compañero dulce y relajante.¿Listo para darle muchos cuidados y amor?</p><button onclick="abrirFormulario('Copito')">Adoptar</button></div>
+            </div>
+        </section>
+        
+        <section id="adopcion" class="py-5">
+            <h2 class="text-center mb-5">📤 Publica un Animal para Adopción</h2>
+            <div class="card p-4 shadow-lg">
+                <p class="text-center text-muted mb-4">Ayúdanos a encontrar un hogar responsable llenando todos los detalles del animal.</p>
+                <form id="formAdopcion" onsubmit="publicarAnimal(event)">
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="animalName" class="form-label fw-bold">Nombre del animal:</label>
+                            <input type="text" id="animalName" name="nombre" placeholder="Ej: Max, Luna, Mía" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="animalType" class="form-label fw-bold">Tipo de animal:</label>
+                            <select id="animalType" name="tipo" class="form-select" required>
+                                <option value="">Seleccione el tipo</option>
+                                <option value="perros">Perro</option>
+                                <option value="gatos">Gato</option>
+                                <option value="otros">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="animalAge" class="form-label fw-bold">Edad (en años):</label>
+                            <input type="number" id="animalAge" name="edad" placeholder="0.5, 3, 5..." min="0" step="0.5" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="ownerContact" class="form-label fw-bold">Tu Contacto (WhatsApp/Email):</label>
+                            <input type="text" id="ownerContact" name="contacto" placeholder="Tu número o correo" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 border p-3 rounded bg-light">
+                        <p class="fw-bold mb-2">Estado de Salud:</p>
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">¿Está Esterilizado/Castrado?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="esterilizado" id="esterilizadoSi" value="Sí" required>
+                                <label class="form-check-label" for="esterilizadoSi">Sí</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="esterilizado" id="esterilizadoNo" value="No">
+                                <label class="form-check-label" for="esterilizadoNo">No</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">¿Tiene Vacunas al día?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="vacunas" id="vacunasSi" value="Sí" required>
+                                <label class="form-check-label" for="vacunasSi">Sí</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="vacunas" id="vacunasNo" value="No">
+                                <label class="form-check-label" for="vacunasNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="animalDescription" class="form-label fw-bold">Descripción y Temperamento (Máx. 200 caracteres):</label>
+                        <textarea id="animalDescription" name="descripcion" placeholder="Detalla su personalidad, si es amigable con niños, etc." class="form-control" rows="3" maxlength="200" required></textarea>
+                        <small class="form-text text-muted">Sé específico y conciso.</small>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="animalImage" class="form-label fw-bold">Sube una foto del animal (máx. 1MB):</label>
+                        <input type="file" id="animalImage" name="imagen" accept="image/*" class="form-control" required>
+                    </div>
+
+                    <input type="submit" value="Publicar Animal en Adopción" class="btn btn-success w-100">
+                </form>
+            </div>
+        </section>
+        
+        <section id="caso" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-5 text-center text-success">💚 Casos Exitosos: El Poder de Adoptar</h2>
+                <p class="lead text-center text-muted mb-5">Cada historia es una prueba de amor incondicional y una segunda oportunidad. Inspírate con estas transformaciones:</p>
+                
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 bg-white">
+                            <img src="max1.png" class="card-img-top case-img" alt="Max feliz en su nuevo hogar">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h5 class="card-title fw-bold text-success mb-2">Max: De la calle a Rey del Sofá</h5>
+                                <p class="card-text small text-muted flex-grow-1">Max fue rescatado después de una herida grave. Gracias a la familia Rojas, hoy es un perro sano y el compañero de juegos perfecto para dos niños. Su energía y alegría son contagiosas.</p>
+                                <blockquote class="blockquote small mt-3">
+                                    <p class="mb-0 fst-italic text-secondary">"Ver a Max correr feliz es nuestra mayor recompensa. ¡Gracias PawsOfLove por esta alegría!"</p>
+                                </blockquote>
+                                <footer class="blockquote-footer mt-2">Familia Rojas <cite title="Source Title">Adoptantes de Max</cite></footer>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 bg-white">
+                            <img src="caso_mia_feliz.jpg" class="card-img-top case-img" alt="Mía en su casa nueva">
+                            <div class="card-body text-center d-flex flex-column">
+                                <h5 class="card-title fw-bold text-success mb-2">Mía: La Gata que Ronronea la Paz</h5>
+                                <p class="card-text small text-muted flex-grow-1">Mía llegó a nuestra plataforma tímida y asustada. Fue adoptada por la Sra. Elena, quien buscaba compañía. Ahora Mía es su sombra cariñosa y la calma del hogar.</p>
+                                <blockquote class="blockquote small mt-3">
+                                    <p class="mb-0 fst-italic text-secondary">"Su ronroneo me llena el alma. Mía es la mejor compañía que podría pedir."</p>
+                                </blockquote>
+                                <footer class="blockquote-footer mt-2">Sra. Elena <cite title="Source Title">Adoptante de Mía</cite></footer>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-warning p-4 text-center d-flex flex-column justify-content-center bg-white">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bolder text-warning fs-3 mb-3">¡Tu Historia Sigue!</h5>
+                                <p class="card-text lead text-secondary flex-grow-1">Cada adopción es un nuevo capítulo de esperanza y amor incondicional. ¿Estás listo para escribir el tuyo?</p>
+                                <p class="fw-bold mt-4 mb-3 text-success">Haz la diferencia. Adopta, no compres.</p>
+                                <a href="#perros" class="btn btn-lg btn-success mt-3 shadow-sm" onclick="mostrarSeccion('perros')">Ver Animales Disponibles <i class="bi bi-arrow-right-circle-fill ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+            </div> 
+        </section>
+        
+        <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 text-success">📞 Contáctanos: Siempre Listos para Ayudar</h2>
+        <p class="lead text-center text-muted mb-5">¡Estamos aquí para conectar corazones! Comunícate con nosotros a través de nuestras redes o directamente.</p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 contact-card text-center p-4">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <i class="bi bi-facebook contact-icon facebook-icon mb-3"></i>
+                        <h4 class="card-title fw-bold text-primary">Facebook: Paws Of Love</h4>
+                        <p class="card-text text-muted">Síguenos para novedades, eventos y más historias felices.</p>
+                        <a href="https://www.facebook.com/PawsOfLovePeru" target="_blank" class="btn btn-primary btn-sm mt-3 stretched-link">
+                            Visitar Página <i class="bi bi-arrow-right-circle-fill ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 contact-card text-center p-4">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <i class="bi bi-instagram contact-icon instagram-icon mb-3"></i>
+                        <h4 class="card-title fw-bold text-danger">Instagram: @LOVE.PAWSOF</h4>
+                        <p class="card-text text-muted">Galería de fotos y videos de nuestros adoptables y casos exitosos.</p>
+                        <a href="https://www.instagram.com/love.pawsof" target="_blank" class="btn btn-danger btn-sm mt-3 stretched-link">
+                            Ver Perfil <i class="bi bi-arrow-right-circle-fill ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 contact-card text-center p-4">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <i class="bi bi-whatsapp contact-icon whatsapp-icon mb-3"></i>
+                        <h4 class="card-title fw-bold text-success">Contacto Directo</h4>
+                        <p class="card-text text-muted mb-2">
+                            <strong>Teléfono:</strong> <a href="https://wa.me/51928152197" target="_blank" class="text-success text-decoration-none">+51 928152197</a>
+                        </p>
+                        <p class="card-text text-muted mb-4">
+                            <strong>Email:</strong> <a href="mailto:pawsoflove704@gmail.com" class="text-success text-decoration-none">pawsoflove704@gmail.com</a>
+                        </p>
+                        <a href="https://wa.me/51928152197" target="_blank" class="btn btn-success btn-sm mt-auto">
+                            Escríbenos <i class="bi bi-whatsapp ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div> 
+</section>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <h3 class="text-center mb-4 text-success">🐾 Solicitud de Adopción para <span id="animalNombre" class="fw-bold"></span></h3>
+                <form onsubmit="enviarFormulario(event)">
+                    <input type="hidden" id="animal" name="animal">
+                    
+                    <div class="mb-3">
+                        <label for="adopterName" class="form-label fw-bold">Nombre Completo:</label>
+                        <input type="text" id="adopterName" placeholder="Tu Nombre" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="adopterEmail" class="form-label fw-bold">Correo Electrónico:</label>
+                        <input type="email" id="adopterEmail" placeholder="ejemplo@correo.com" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="adopterPhone" class="form-label fw-bold">Teléfono/WhatsApp:</label>
+                        <input type="tel" id="adopterPhone" placeholder="9xxxxxxxx" class="form-control" pattern="[0-9]{9}" required>
+                        <small class="form-text text-muted">Ejemplo: 987654321</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="adopterMotivation" class="form-label fw-bold">¿Por qué quieres adoptar a este animal?</label>
+                        <textarea id="adopterMotivation" placeholder="Cuéntanos sobre tu hogar y por qué eres el adoptante ideal." class="form-control" rows="3" required></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar Solicitud de Adopción" class="btn btn-success w-100 mt-3">
+                </form>
+            </div>
+        </div>
+        
+        <div id="imgModal"><span class="close" onclick="cerrarImagen()">&times;</span>
+            <img class="modal-img" id="imagenGrande">
+        </div>
+        
+        <section id="desarrolladores" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 text-success fw-bold">🚀 Desarrolladores de PawsOfLove</h2>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 developer-card text-center p-4">
+                    <div class="developer-img-container mb-3">
+                        <img src="fernando.jpeg" alt="Fernando Renato Aranda Rojas" class="developer-img">
+                    </div>
+                    <div class="card-body p-0">
+                        <h4 class="fw-bolder text-success mb-2">Fernando Aranda Rojas</h4>
+                        <p class="role-title text-primary fw-bold mb-3">Desarrollador Frontend</p>
+                        <p class="card-text small text-muted text-start">¡Hola! Soy Fernando, estudiante de Ingeniería Industrial en la UNHEVAL. Con 24 años, busco crecer profesionalmente combinando mi base técnica con nuevos conocimientos.</p>
+                        
+                        <div class="contact-info mt-3 text-start">
+                            <p class="mb-1 small"><i class="bi bi-envelope-fill text-success me-2"></i> Email: <a href="mailto:fernandoarandarojas8@gmail.com">fernandoarandarojas8@gmail.com</a></p>
+                            <p class="mb-0 small"><i class="bi bi-whatsapp text-success me-2"></i> Teléfono: <a href="https://wa.me/51928152197">+51 928152197</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 developer-card text-center p-4">
+                    <div class="developer-img-container mb-3">
+                        <img src="deyvis.jpeg" alt="Deyvis Uzuriaga Obregón" class="developer-img">
+                    </div>
+                    <div class="card-body p-0">
+                        <h4 class="fw-bolder text-success mb-2">Deyvis Uzuriaga Obregón</h4>
+                        <p class="role-title text-primary fw-bold mb-3">Scrum Master</p>
+                        <p class="card-text small text-muted text-start">Estudiante de primer año de Ingeniería Industrial. Tengo 20 años, soy licenciado de las fuerzas armadas. Apasionado por la música, el fútbol y amante de la naturaleza.</p>
+                        
+                        <div class="contact-info mt-3 text-start">
+                            <p class="mb-1 small"><i class="bi bi-envelope-fill text-success me-2"></i> Email: <a href="mailto:deyvisuzuriaga888@gmail.com">deyvisuzuriaga888@gmail.com</a></p>
+                            <p class="mb-0 small"><i class="bi bi-whatsapp text-success me-2"></i> Teléfono: <a href="https://wa.me/51973601242">+51 973601242</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 developer-card text-center p-4">
+                    <div class="developer-img-container mb-3">
+                        <img src="mauricio.jpg" alt="Jhandel Mauricio Almonacid Roque" class="developer-img">
+                    </div>
+                    <div class="card-body p-0">
+                        <h4 class="fw-bolder text-success mb-2">Jhandel Mauricio Almonacid Roque</h4>
+                        <p class="role-title text-primary fw-bold mb-3">Desarrollador Backend</p>
+                        <p class="card-text small text-muted text-start">Estudiante de Ingeniería Industrial en la UNHEVAL. Me especializo en la lógica de negocio y la gestión de bases de datos. Comprometido con soluciones eficientes y escalables.</p>
+                        
+                        <div class="contact-info mt-3 text-start">
+                            <p class="mb-1 small"><i class="bi bi-envelope-fill text-success me-2"></i> Email: jhandelalmonacid@gmail.com</p>
+                            <p class="mb-0 small"><i class="bi bi-whatsapp text-success me-2"></i> Teléfono: +51 918048342</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100 shadow-lg border-0 developer-card text-center p-4">
+                    <div class="developer-img-container mb-3">
+                        <img src="lucho.jpeg" alt="Luis Fernand Condezo Rojas" class="developer-img">
+                    </div>
+                    <div class="card-body p-0">
+                        <h4 class="fw-bolder text-success mb-2">Luis Fernand Condezo Rojas</h4>
+                        <p class="role-title text-primary fw-bold mb-3">Testing y QA</p>
+                        <p class="card-text small text-muted text-start">Estudiante de Ingeniería Industrial. Mi enfoque es asegurar la calidad del producto, mediante pruebas rigurosas y atención al detalle. Busco entregar una experiencia de usuario sin errores.</p>
+                        
+                        <div class="contact-info mt-3 text-start">
+                            <p class="mb-1 small"><i class="bi bi-envelope-fill text-success me-2"></i> Email: condezorojas@gmail.com</p>
+                            <p class="mb-0 small"><i class="bi bi-whatsapp text-success me-2"></i> Teléfono: +51 +51 971 885 071</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+        
+    </div> <footer><p>&copy; 2025 Adopta una Mejor Amistad. Todos los derechos reservados a F.L.D .</p>
+    </footer>
+    
+    <script src="funciones.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
