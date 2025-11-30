@@ -1,13 +1,4 @@
-/* =========================================================
-   ESTILOS BASE Y PALETA DE COLORES
-   ========================================================= */
 
-/* Paleta de colores principal:
-   Verde Olivo: #6B8E23 (Header, Footer, Títulos H2)
-   Marrón Oscuro: #A0522D (Nav, Botones de Adopción)
-   Naranja Bronce: #CD7F32 (Hover, Acentos)
-   Beige/Fondo: #F8F8F8 (Body)
-*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -29,9 +20,7 @@ h2 {
 }
 
 
-/* =========================================================
-   HEADER Y NAVEGACIÓN
-   ========================================================= */
+
 
 header {
     background-color: #6B8E23; 
@@ -69,11 +58,6 @@ nav a {
 nav a:hover, nav a.active {
     background-color: #CD7F32; 
 }
-
-
-/* =========================================================
-   SECCIÓN DE INICIO (OBJETIVO, MISIÓN, VISIÓN) - Mejorada
-   ========================================================= */
 
 #Inicio {
     padding: 60px 20px;
@@ -696,38 +680,45 @@ section.activa {
 #desarrolladores .contact-info a:hover {
     color: #38761d;
 }
-/* ======================================================= */
-/* ====== SOLUCIONES DE FUNCIONALIDAD Y ESTILO MEJORADO ====== */
-/* ======================================================= */
-
-/* 1. SOLUCIÓN CLAVE: Evita que capas invisibles cubran los botones. */
 .nav-custom {
-    /* Mantiene la barra fija en la parte superior */
+    
+    background-color: transparent !important; 
+    box-shadow: none !important; 
+    border-bottom: none !important; 
     position: sticky !important; 
     top: 0;
-    /* Da la prioridad de capa más alta para que siempre esté al frente */
     z-index: 1020 !important; 
-    
-    /* Estilos estéticos mejorados */
-    background-color: #A0522D !important; 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
-    border-bottom: 3px solid #6B8E23;
+    padding: 10px 0; 
 }
 
-/* 2. Desplazamiento Suave (Scroll Behavior) */
-/* Hace que el salto entre secciones sea suave, si el navegador lo soporta. */
-html {
-    scroll-behavior: smooth;
+.nav-custom .nav-item {
+    margin: 0 5px; 
 }
 
-/* 3. Estilos de Enlaces (Para un mejor feedback visual) */
 .nav-custom .nav-link {
     color: #ffffff !important;
     font-weight: 600;
-    padding: 15px 20px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    border-radius: 8px;
-    margin: 0 5px;
+    padding: 10px 18px; 
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    border-radius: 20px; 
+    
+    
+    background-color: #A0522D !important; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+.nav-custom .nav-link:hover,
+.nav-custom .nav-link.active {
+    background-color: #6B8E23 !important; 
+    color: #ffffff !important;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.navbar-nav {
+
+    flex-direction: row; 
+    align-items: center;
 }
 
 .nav-custom .nav-link:hover,
@@ -735,4 +726,4 @@ html {
     background-color: #C18C5D !important;
     color: #ffffff !important;
     transform: translateY(-2px);
-}
+ } }
